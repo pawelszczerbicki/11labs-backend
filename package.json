@@ -25,6 +25,7 @@
     "csvtojson": "^2.0.10",
     "date-fns": "^3.6.0",
     "dotenv": "^10.0.0",
+    "elevenlabs": "^1.51.0",
     "express": "^4.17.1",
     "express-async-errors": "^3.1.1",
     "express-winston": "^4.2.0",

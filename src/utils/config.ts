@@ -11,7 +11,5 @@ export const config = {
   PROJECT_ID: process.env.PROJECT_ID,
   FRONT_URL: process.env.FRONT_URL,
   BUCKET: process.env.BUCKET,
-  STRIPE_API_KEY: process.env.STRIPE_API_KEY,
-  BUSINESS_FRONT_URL: process.env.BUSINESS_FRONT_URL,
-  SENDGRID_API_KEY: process.env.SENDGRID_API_KEY
+  ELEVEN_LABS_KEY: "sk_461f9036e78b1ecfe205fbea82da2561ce61b7bebb6f7428"
 }
