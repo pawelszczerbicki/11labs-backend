@@ -10,6 +10,8 @@ import {TaleService} from "./tale/tale.service";
 import {TaleController} from "./tale/tale.controller";
 import {StoryController} from "./story/story.controller";
 import {StoryService} from "./story/story.service";
+import {KidController} from "./kid/kid.controller";
+import {KidService} from "./kid/kid.service";
 
 export let mongo: Mongo;
 if (!mongo)
@@ -25,4 +27,5 @@ export const publicControllers = [
   new HelloController(new HelloService()),
   new TaleController(taleService),
   new StoryController(new StoryService(mongo)),
+  new KidController(new KidService(mongo)),
 ].map((c: Controller) => c.router);

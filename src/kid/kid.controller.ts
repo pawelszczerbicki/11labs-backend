@@ -4,7 +4,7 @@ import {KidService} from "./kid.service";
 import {Kid} from "./kid";
 
 
-export class StoryController implements Controller {
+export class KidController implements Controller {
   router = Router();
 
   constructor(private kid: KidService) {
