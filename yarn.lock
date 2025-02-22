@@ -985,6 +985,11 @@
   dependencies:
     google-gax "^4.0.4"
 
+"@google/generative-ai@^0.22.0":
+  version "0.22.0"
+  resolved "https://registry.yarnpkg.com/@google/generative-ai/-/generative-ai-0.22.0.tgz#e77a1a3911f4f98bf9e965ad7c4b1ee2130abd26"
+  integrity sha512-mLR3PDWCk5O/BWNyDvFDIiwKeXQmFGZ+kJFd9m73QrUPCFREttJyVbBPTW4y9CwTbaltLMDaLDfroCrRv5Bl8Q==
+
 "@grpc/grpc-js@^1.10.9":
   version "1.11.1"
   resolved "https://registry.npmjs.org/@grpc/grpc-js/-/grpc-js-1.11.1.tgz"
