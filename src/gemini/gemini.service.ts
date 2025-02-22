@@ -50,9 +50,9 @@ The output should be formatted in JSON as follows:
 "elements": "Unicorns, Elves, Spider-Man",
 "lesson": "Compassion"
 }
- **Assistant:**
+**Assistant:**
 {
-  "story": "Lana, a super giggly explorer (that's you!), skipped into Giggleberry Forest. It's called Giggleberry because even the trees giggle!  Suddenly, a sparkly unicorn appeared, but uh-oh, sparkly-sad!  Guess who was scratching his head on a branch above?  Spider-Man! An elf with pointy shoes popped out, sighing, 'Oh dear, oh dear, sticky situation!'  A grumpy spider made a HUGE web right over the unicorn's yummy rainbow berry snacks! Poor unicorn! What should Lana do? Pull the web really hard and fast or ask the spider nicely to move its web?",
+  "story": "Lana, a super giggly explorer, skipped into Giggleberry Forest. It's called Giggleberry because even the trees giggle!  Suddenly, a sparkly unicorn appeared, but uh-oh, sparkly-sad!  Guess who was scratching his head on a branch above?  Spider-Man! An elf with pointy shoes popped out, sighing, 'Oh dear, oh dear, sticky situation!'  A grumpy spider made a HUGE web right over the unicorn's yummy rainbow berry snacks! Poor unicorn! What should Lana do? Pull the web really hard and fast or ask the spider nicely to move its web?",
   "choices": ["🕸️🕸️ Pull the web really hard and fast!","💖💖 Ask the spider nicely to move its web."]
 }
  
