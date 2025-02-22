@@ -19,8 +19,8 @@ export class TaleService {
         prompt: text.slice(0, 400),
         style: 'digital_illustration',
         image_size: {
-          width: 512,
-          height: 512
+          width: 256,
+          height: 256
         }
       }
     }).then(r => r.data.images[0].url);
