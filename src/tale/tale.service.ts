@@ -11,7 +11,7 @@ export class TaleService {
   storyText = (r: TaleRequest) =>
     this.gemini.generate(JSON.stringify(r), r.step, r.storyHistory).then((r) => JSON.parse(r));
   storyAudio = (r: string) =>
-    this.elevenLabs.textToSpeech.convert("JBFqnCBsd6RMkjVDRZzb", {
+    this.elevenLabs.textToSpeech.convertAsStream("JBFqnCBsd6RMkjVDRZzb", {
       text: r,
       model_id: "eleven_multilingual_v2",
       output_format: "mp3_44100_128"
