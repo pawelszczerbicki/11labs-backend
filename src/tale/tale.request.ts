@@ -1,5 +1,5 @@
 export interface TaleRequest {
-  kidName: string
+  name: string
   lesson: string
   age: string
   elements: string[]
