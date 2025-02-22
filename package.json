@@ -13,7 +13,8 @@
     "dev": "nodemon --watch 'src/**/*.ts' --ignore 'src/**/*.spec.ts' --exec 'ts-node' src/index.ts",
     "start": "node ./dist/index",
     "lint": "eslint . --ext .ts",
-    "test": "jest --runInBand"
+    "test": "jest --runInBand",
+    "migrate": "nodemon --watch 'tools/*.ts' --exec 'ts-node' tools/index.ts"
   },
   "dependencies": {
     "@aws-sdk/client-sns": "^3.41.0",
