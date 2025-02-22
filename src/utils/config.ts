@@ -1,10 +1,9 @@
 import 'dotenv/config'
 import * as process from "node:process";
 
-
 export const config = {
   PORT: process.env.PORT || 3000,
-  DB_URL: process.env.DB_URL,
+  DB_URL: "mongodb+srv://user:QNeOo7StPNR0tHpK@hackaton.rkoie.mongodb.net/?retryWrites=true&w=majority&appName=hackaton",
   LOG_LEVEL: process.env.LOG_LEVEL || "info",
   SMS_API_TOKEN: process.env.SMS_API_TOKEN,
   QUEUE_REGION: process.env.QUEUE_REGION,

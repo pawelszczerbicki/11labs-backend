@@ -8,6 +8,8 @@ import {config} from "./utils/config";
 import {GeminiService} from "./gemini/gemini.service";
 import {TaleService} from "./tale/tale.service";
 import {TaleController} from "./tale/tale.controller";
+import {StoryController} from "./story/story.controller";
+import {StoryService} from "./story/story.service";
 
 export let mongo: Mongo;
 if (!mongo)
@@ -21,5 +23,6 @@ const taleService = new TaleService(geminiService, elevenLabsClient)
 
 export const publicControllers = [
   new HelloController(new HelloService()),
-  new TaleController(taleService)
+  new TaleController(taleService),
+  new StoryController(new StoryService(mongo)),
 ].map((c: Controller) => c.router);
