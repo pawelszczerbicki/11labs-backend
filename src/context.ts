@@ -14,7 +14,6 @@ import {KidController} from "./kid/kid.controller";
 import {KidService} from "./kid/kid.service";
 import {fal} from "@fal-ai/client";
 
-fal.config({ credentials: config.FAL_KEY });
 export let mongo: Mongo;
 if (!mongo)
   mongo = new Mongo()

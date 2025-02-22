@@ -2,6 +2,7 @@ import {TaleRequest} from "./tale.request";
 import {GeminiService} from "../gemini/gemini.service";
 import {ElevenLabsClient} from "elevenlabs";
 import {fal} from '@fal-ai/client';
+import {config} from "../utils/config";
 
 export class TaleService {
   constructor(
@@ -11,16 +12,19 @@ export class TaleService {
   }
 
   storyText = (r: TaleRequest) => this.gemini.generate(JSON.stringify(r), r.step, r.storyHistory).then((r) => JSON.parse(r));
-  storyImage = (text: string) => fal.subscribe('fal-ai/recraft-v3', {
-    input: {
-      prompt: text.slice(0, 400),
-      style: 'digital_illustration',
-      image_size: {
-        width: 512,
-        height: 512
+  storyImage = (text: string) => {
+    fal.config({ credentials: config.FAL_KEY });
+    return  fal.subscribe('fal-ai/recraft-v3', {
+      input: {
+        prompt: text.slice(0, 400),
+        style: 'digital_illustration',
+        image_size: {
+          width: 512,
+          height: 512
+        }
       }
-    }
-  }).then(r => r.data.images[0].url);
+    }).then(r => r.data.images[0].url);
+  }
 
   storyAudio = (r: string) =>
     this.elevenLabs.textToSpeech.convertAsStream("JBFqnCBsd6RMkjVDRZzb", {
