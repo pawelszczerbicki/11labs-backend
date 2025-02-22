@@ -1,4 +1,4 @@
-import { controllers, publicControllers} from "./context";
+import {publicControllers} from "./context";
 import {errorHandler} from "./error/error.handler";
 import express from "express";
 import cors from "cors";
@@ -10,9 +10,8 @@ export const app = express()
   .use(expressLogger)
   .use(express.json())
   .use(express.urlencoded({extended: true}))
-  .use("/client", publicControllers)
+  .use(publicControllers)
   .use(auth)
-  .use(controllers)
   .use(errorHandler);
 
 

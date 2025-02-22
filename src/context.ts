@@ -8,7 +8,6 @@ if (!mongo)
   mongo = new Mongo()
 
 
-export const controllers = [].map((c: Controller) => c.router);
 
 export const publicControllers = [
   new HelloController(new HelloService()),
