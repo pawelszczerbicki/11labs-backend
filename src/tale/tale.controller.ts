@@ -13,7 +13,7 @@ export class TaleController implements Controller {
   }
 
   storyText = (r: TaleRequest) => this.tale.storyText(r);
-  storyImage = (t: string) => this.tale.storyImage(t);
+  storyImage = (t: string) => this.tale.storyImage(t).then(u => ({url: u}));
   getStory = async (req, res) => {
     const audio = await this.tale.storyAudio(req.body.text);
     res.setHeader("Content-Type", "audio/mpeg");
