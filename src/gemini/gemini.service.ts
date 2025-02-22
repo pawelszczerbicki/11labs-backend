@@ -201,7 +201,7 @@ The output should be formatted in JSON as follows:
 export class GeminiService {
   constructor(private gemini: GoogleGenerativeAI) {}
 
-  generate = (p: string, step: number) => {
+  generate = (p: string, step: number, storyHistory?: string) => {
     let currentInstruction = instruction_start;
     if (step === 4) {
       currentInstruction = instruction_last;

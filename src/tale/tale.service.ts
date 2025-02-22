@@ -8,7 +8,8 @@ export class TaleService {
     private elevenLabs: ElevenLabsClient
   ) {}
 
-  storyText = (r: TaleRequest) => this.gemini.generate(JSON.stringify(r), r.step).then((r) => JSON.parse(r));
+  storyText = (r: TaleRequest) =>
+    this.gemini.generate(JSON.stringify(r), r.step, r.storyHistory).then((r) => JSON.parse(r));
   storyAudio = (r: string) =>
     this.elevenLabs.textToSpeech.convert("JBFqnCBsd6RMkjVDRZzb", {
       text: r,
