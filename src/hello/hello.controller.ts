@@ -9,7 +9,7 @@ export class HelloController implements Controller {
 
   constructor(private service: HelloService, private tale: TaleService) {
     this.router.get("/", (_, res) => this.get().then(u => res.json(u)));
-    this.router.get("/story", this.getStory);
+    this.router.post("/story", this.getStory);
   }
 
   get = () => this.service.sayHello()
