@@ -1,4 +1,4 @@
-export class TaleRequest {
+export interface TaleRequest {
   kidName: string
   lesson: string
   age: string

@@ -7,6 +7,7 @@ import {ElevenLabsClient} from "elevenlabs";
 import {config} from "./utils/config";
 import {GeminiService} from "./gemini/gemini.service";
 import {TaleService} from "./tale/tale.service";
+import {TaleController} from "./tale/tale.controller";
 
 export let mongo: Mongo;
 if (!mongo)
@@ -19,5 +20,6 @@ const geminiService = new GeminiService(gemini)
 const taleService = new TaleService(geminiService, elevenLabsClient)
 
 export const publicControllers = [
-  new HelloController(new HelloService(), taleService),
+  new HelloController(new HelloService()),
+  new TaleController(taleService)
 ].map((c: Controller) => c.router);
