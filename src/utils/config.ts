@@ -11,5 +11,6 @@ export const config = {
   FRONT_URL: process.env.FRONT_URL,
   BUCKET: process.env.BUCKET,
   ELEVEN_LABS_KEY: "sk_461f9036e78b1ecfe205fbea82da2561ce61b7bebb6f7428",
-  GEMINI_KEY: "AIzaSyDTpqR2IYOsfJWLhTeFouD0tGSkrOAHo90"
+  GEMINI_KEY: "AIzaSyDTpqR2IYOsfJWLhTeFouD0tGSkrOAHo90",
+  FAL_KEY:  "626d2bff-136a-4fbe-896a-c8ab203c"
 }
