@@ -11,5 +11,5 @@ export class KidService {
     await this.mongo.kid().insertOne({id: randomUUID(), ...s})
   }
 
-  get = () => this.mongo.story().find().toArray()
+  get = () => this.mongo.kid().find().toArray()
 }
