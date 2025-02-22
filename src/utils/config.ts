@@ -12,5 +12,5 @@ export const config = {
   BUCKET: process.env.BUCKET,
   ELEVEN_LABS_KEY: "sk_461f9036e78b1ecfe205fbea82da2561ce61b7bebb6f7428",
   GEMINI_KEY: "AIzaSyDTpqR2IYOsfJWLhTeFouD0tGSkrOAHo90",
-  FAL_KEY:  "626d2bff-136a-4fbe-896a-c8ab203c"
+  FAL_KEY:  "94ba8469-c3c8-4486-9e09-fe2248ce2496:058b9f8ab6290585c8cdc417da1bc3fe"
 }
