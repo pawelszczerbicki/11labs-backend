@@ -9,6 +9,9 @@ export class TaleController implements Controller {
 
   constructor(private tale: TaleService) {
     this.router.post("/story/text", (req, res) => this.storyText(req.body).then(u => res.json(u)));
+
+
+
     this.router.post("/story/audio", this.getStory);
   }
 
