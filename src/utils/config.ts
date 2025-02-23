@@ -10,7 +10,7 @@ export const config = {
   PROJECT_ID: process.env.PROJECT_ID,
   FRONT_URL: process.env.FRONT_URL,
   BUCKET: process.env.BUCKET,
-  ELEVEN_LABS_KEY: "sk_461f9036e78b1ecfe205fbea82da2561ce61b7bebb6f7428",
+  ELEVEN_LABS_KEY: "sk_887c915552f3a4e88f983e9faea948dac2aa8a3fa5389f45",
   GEMINI_KEY: "AIzaSyDTpqR2IYOsfJWLhTeFouD0tGSkrOAHo90",
   FAL_KEY:  "94ba8469-c3c8-4486-9e09-fe2248ce2496:058b9f8ab6290585c8cdc417da1bc3fe"
 }
