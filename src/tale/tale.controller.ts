@@ -15,7 +15,7 @@ export class TaleController implements Controller {
   storyText = (r: TaleRequest) => this.tale.storyText(r);
   storyImage = (t: string) => this.tale.storyImage(t).then(u => ({url: u}));
   getStory = async (req, res) => {
-    const audio = await this.tale.storyAudio(req.body.text);
+    const audio = await this.tale.storyAudio(req.body.text, req.body.voice);
     res.setHeader("Content-Type", "audio/mpeg");
     res.setHeader("Content-Disposition", 'inline; filename="audio.mp3"');
     audio.pipe(res);
